@@ -52,10 +52,10 @@ Take the following steps to spice up your vaadin project with the cool HTML5 ele
 - You have to include this one as jar and source-jar into the project you compile your widgetset with
 - You have to create a custom widgetset (if you don't already have one) and include the Html5 widgets there like this (check out the .gwt.xml of vaadin-html5-widgets-test for one way of how to do that): 
 ```xml
-	<inherits name="de.sebastianrothbucher.vaadin.html5.Html5Widgets" />
+	<inherits name="de.akquinet.engineering.vaadin.html5.Html5Widgets" />
 ```
 - You have to have maven widgetset compilation in place (check out the POM of vaadin-html5-widgets-test for one way of how to do that)
-- You can now use de.sebastianrothbucher.vaadin.html5.widgetset.ColorField and others (return values are Strings - at least for now)
+- You can now use de.akquinet.engineering.vaadin.html5.widgetset.ColorField and others (return values are Strings - at least for now)
 - Have fun!
 
 In case you want to check out the sample first, take these steps (assuming Eclipse): 

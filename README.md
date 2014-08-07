@@ -13,7 +13,9 @@ and on Chrome (as of July 20, 2014): <br /><img src="img/time.png" />
 
 Whether mobile or desktop: to use these cool new features in [vaadin](http://www.vaadin.com) is the aim of this project: it extends the TextField and changes the input type. For Number and Range it also supports setting vital attributes.
 
-Here's how you do that: 
+Focus is on a simple solution - i.e. you have getValue() instanceof String, you get/set what the Browser uses and sees. Please note that support for HTML5-inputs varies between browsers and browser versions.
+
+Here's how you use an HTML5-input: 
 ```java
 	ColorField colorField = new ColorField();
 	colorField.setCaption("Color");
@@ -66,7 +68,7 @@ Take the following steps to spice up your vaadin project with the cool HTML5 ele
 
 - Clone / download this project and mvn install at least vaadin-html5-widgets-core
 - Include this one as jar into the project you want to use the fields in
-- Include this one as jar and source-jar into the project you compile your widgetset with
+- Include this one as jar into the project you compile your widgetset with (might come as transitive dependency)
 - Create a custom widgetset (if you don't already have one) and include the Html5 widgets there like this (check out the .gwt.xml of vaadin-html5-widgets-test for one complete way of how to do that): 
 ```xml
 	<inherits name="de.akquinet.engineering.vaadin.html5.Html5Widgets" />

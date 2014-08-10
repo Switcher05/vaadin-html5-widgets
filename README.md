@@ -11,7 +11,7 @@ Here's an example of the HTML5 time picker on the iPhone (4S):  <br /><img src="
 
 and on Chrome (as of July 20, 2014): <br /><img src="img/time.png" />
 
-Whether mobile or desktop: to use these cool new features in [vaadin](http://www.vaadin.com) is the aim of this project: it extends the TextField and changes the input type. For Number and Range it also supports setting vital attributes.
+Whether mobile or desktop: to use these cool new features in [vaadin](http://www.vaadin.com) is the aim of this project: it extends the com.vaadin.ui.TextField and changes the input type. For Number and Range it also supports setting vital attributes. This allows you to use the native inputs on the iPhone, on Android, on Chrome, etc. and to provide an optimal experience to your users.
 
 Focus is on a simple solution - i.e. you have getValue() instanceof String, you get/set what the Browser uses and sees. Please note that support for HTML5-inputs varies between browsers and browser versions.
 
@@ -31,6 +31,10 @@ Same for Range (displayed as a Slider):
 	layout.addComponent(rangeField);
 
 ```
+
+Download the JAR: 
+- <a href="dist/vaadin-html5-widgets-core-1.0.jar">Version 1.0</a> (Release)
+- <a href="dist/vaadin-html5-widgets-core-1.1-SNAPSHOT.jar">Version 1.1-SNAPSHOT</a>
 
 There is a sample app available - pls. find the details below.
 
@@ -66,7 +70,8 @@ Week picker: <br /><img src="img/week.png" />
 
 Take the following steps to spice up your vaadin project with the cool HTML5 elements (you can also copy and paste from the sample at vaadin-html5-widgets-test)
 
-- Clone / download this project and mvn install at least vaadin-html5-widgets-core
+- either download the JAR above
+- or: Clone / download this project and mvn install at least vaadin-html5-widgets-core
 - Include this one as jar into the project you want to use the fields in
 - Include this one as jar into the project you compile your widgetset with (might come as transitive dependency)
 - Create a custom widgetset (if you don't already have one) and include the Html5 widgets there like this (check out the .gwt.xml of vaadin-html5-widgets-test for one complete way of how to do that): 
@@ -75,7 +80,7 @@ Take the following steps to spice up your vaadin project with the cool HTML5 ele
 ```
 - You have to have maven widgetset compilation in place (check out the POM of vaadin-html5-widgets-test for one complete way of how to do that)
 - You can now use de.akquinet.engineering.vaadin.html5.widgetset.ColorField and others - all inherit com.vaadin.ui.TextField, so the API will be familiar
-- Right now, all return values are java.lang.String, so you can work with what you see in the Browser. This did proof viable so far, but the project evolves - stay tuned...
+- Right now, all return values are java.lang.String, so you can work with what the Browser returns to you
 - Above all: Have fun!
 
 In case you want to check out the sample first, take these steps (assuming Eclipse): 

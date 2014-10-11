@@ -38,7 +38,9 @@ Download the JAR:
 
 There is a sample app available - pls. find the details below.
 
-Feel free to share your insights, thoughts and feedback!
+Feel free to share your insights, thoughts and feedback! - you can do this e.g. by using the Comments function of our Blog (bottom part of the page): 
+- [English](http://blog.akquinet.de/2014/09/02/using-html5-inputs-in-vaadin/)
+- [German](http://blog-de.akquinet.de/2014/09/02/nutzen-der-html5-inputs-in-vaadin/)
 
 
 ## Some cool input types

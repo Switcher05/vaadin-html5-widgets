@@ -19,16 +19,17 @@ the License.
 	<groupId>de.akquinet.engineering.vaadin</groupId>
 	<artifactId>vaadin-html5-widgets</artifactId>
 	<packaging>pom</packaging>
-	<version>1.1-SNAPSHOT</version>
+	<version>1.2-SNAPSHOT</version>
 	<name>HTML5 widgets for vaadin</name>
 	<url>https://github.com/akquinet/vaadin-html5-widgets</url>
 	<organization>
 		<name>akquinet engineering GmbH</name>
 		<url>http://www.akquinet.de/java</url>
 	</organization>
+	<!-- at least temporarily move properties / build instructions to sub-projects to make them independent
 	<properties>
-		<vaadin.version>7.1.6</vaadin.version>
-	</properties>
+		<vaadin.version>7.6.1</vaadin.version>
+	</properties> -->
 	<modules>
 		<module>vaadin-html5-widgets-core</module>
 		<module>vaadin-html5-widgets-test</module>

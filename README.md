@@ -33,8 +33,8 @@ Same for Range (displayed as a Slider):
 ```
 
 Download the JAR: 
-- <a href="dist/vaadin-html5-widgets-core-1.0.jar">Version 1.0</a> (Release)
-- <a href="dist/vaadin-html5-widgets-core-1.1-SNAPSHOT.jar">Version 1.1-SNAPSHOT</a>
+- <a href="dist/vaadin-html5-widgets-core-1.2.jar">Version 1.2</a> (Release)
+- <a href="dist/vaadin-html5-widgets-core-1.3-SNAPSHOT.jar">Version 1.3-SNAPSHOT</a>
 
 There is a sample app available - pls. find the details below.
 
@@ -92,7 +92,7 @@ In case you want to check out the sample first, take these steps (assuming Eclip
 	mvn install eclipse:eclipse -Pwidgetset
 ```
 - Now you can import as existing projects into eclipse (you'll have vaadin-html5-widget-core and vaadin-html5-widget-test)
-- To use the server plugin, go to the properties of vaadin-html5-widget-test and change the Java version in the facet (in "Project Facets") to the one given in the "Java Compiler" section; go to "Deployment assembly" and remove vaadin-html5-widget-core, then re-add it (Add > Project and so on). Finally add target/vaadin-html5-widgets-test-1.0-SNAPSHOT as a folder (also in "Deployment assembly") so the widgetset is available
+- To use the server plugin, go to the properties of vaadin-html5-widget-test and change the Java version in the facet (in "Project Facets") to the one given in the "Java Compiler" section; go to "Deployment assembly" and remove vaadin-html5-widget-core, then re-add it (Add > Project and so on). Finally add target/vaadin-html5-widgets-test-1.3-SNAPSHOT as a folder (also in "Deployment assembly") so the widgetset is available
 - To use the server plugin, (furthermore) go to the properties of vaadin-html5-widgets-core change the Java version in the facet (in "Project Facets") to the one given in the "Java Compiler" section
 - Deploy to a local tomcat and point your browser to http://localhost:8080/vaadin-html5-widgets-test/
 - as ever: Have fun!
